@@ -23,9 +23,18 @@ export default {
           transform: 'translateY(0)',
         },
       },
+      appear: {
+        from: {
+          opacity: '0',
+        },
+        to: {
+          opacity: '1',
+        },
+      },
     },
     animation: {
       slidein: 'slidein 1s ease 500ms',
+      appear: 'appear 2s ease 500ms',
     },
   },
   plugins: [],
