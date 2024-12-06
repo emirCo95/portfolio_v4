@@ -12,6 +12,21 @@ export default {
         lightGray: '#E8E8E8',
       },
     },
+    keyframes: {
+      slidein: {
+        from: {
+          opacity: '0',
+          transform: 'translateY(-100px)',
+        },
+        to: {
+          opacity: '1',
+          transform: 'translateY(0)',
+        },
+      },
+    },
+    animation: {
+      slidein: 'slidein 1s ease 500ms',
+    },
   },
   plugins: [],
 } satisfies Config;
