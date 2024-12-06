@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import './globals.css';
+import Navbar from '@/components/Navbar';
 
 export const metadata: Metadata = {
   title: 'Emir Cokrlija',
@@ -13,7 +14,14 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body>
+        <div className="w-full h-screen p-10">
+          <div className="relative w-full h-full border-2 border-black">
+            <Navbar />
+            {children}
+          </div>
+        </div>
+      </body>
     </html>
   );
 }
