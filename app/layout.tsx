@@ -14,7 +14,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body>
+      <body className=" overflow-hidden">
         <div className="w-full h-screen p-10">
           <div className="relative w-full h-full border-2 border-black">
             <Navbar />
